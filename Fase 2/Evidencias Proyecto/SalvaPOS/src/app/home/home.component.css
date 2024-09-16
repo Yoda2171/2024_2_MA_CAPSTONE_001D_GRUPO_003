@@ -58,3 +58,9 @@ p {
     .btn-secondary:hover {
     background-color: #5a6268;
     }
+
+.btn-primaryy {
+        background-color: #007bff;
+        color: white;
+        transition: background-color 0.3s ease;
+        }    
