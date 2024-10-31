@@ -1,0 +1,48 @@
+<!-- Contenedor principal -->
+<div class="container-fluid d-flex justify-content-center align-items-center bg-gradient vh-100">
+  <!-- Formulario de registro -->
+  <div id="registerForm" class="glass-card p-4 rounded-3 shadow-lg" style="max-width: 400px; width: 100%;">
+    <div class="text-center mb-4">
+      <img src="assets/img/Registro.png" alt="Logo" class="img-fluid mb-3" style="width: 80px;">
+      <h3 class="fw-bold">Registrar Nuevo Usuario</h3>
+    </div>
+
+    <form novalidate>
+      <!-- Campo de Nombre Completo -->
+      <div class="form-floating mb-3">
+        <input type="text" id="fullName" class="form-control" placeholder="Ingrese su nombre completo" required>
+        <label for="fullName"><i class="fas fa-user me-2"></i>Nombre Completo</label>
+        <div class="invalid-feedback">Debe rellenar este campo.</div>
+      </div>
+
+      <!-- Campo de Correo Electrónico -->
+      <div class="form-floating mb-3">
+        <input type="email" id="email" class="form-control" placeholder="Ingrese su correo" required>
+        <label for="email"><i class="fas fa-envelope me-2"></i>Correo Electrónico</label>
+        <div class="invalid-feedback">Debe ingresar un correo válido.</div>
+      </div>
+
+      <!-- Campo de Rol -->
+      <div class="form-floating mb-3">
+        <input type="text" id="role" class="form-control" placeholder="Ingrese un rol" required>
+        <label for="role"><i class="fas fa-briefcase me-2"></i>Rol</label>
+        <div class="invalid-feedback">Debe rellenar este campo.</div>
+      </div>
+
+      <!-- Campo de Contraseña -->
+      <div class="form-floating mb-4">
+        <input type="password" id="password" class="form-control" placeholder="Ingrese su contraseña" required>
+        <label for="password"><i class="fas fa-lock me-2"></i>Contraseña</label>
+        <div class="invalid-feedback">Debe ingresar una contraseña.</div>
+      </div>
+
+      <!-- Botón de registrar -->
+      <button type="submit" class="btn btn-success w-100 fw-bold py-2">Registrar</button>
+    </form>
+
+    <!-- Enlace para iniciar sesión -->
+    <div class="text-center mt-3">
+      <a href="/login" class="text-decoration-none text-muted">¿Ya tienes una cuenta? Inicia Sesión</a>
+    </div>
+  </div>
+</div>
